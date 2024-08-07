@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Balance Checker</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.7.0/dist/web3.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Ethereum Balance Checker</h1>
+    <div>
+        <button onclick="connectMetaMask()">Connect MetaMask</button>
+        <div id="metamask_output"></div>
+    </div>
+    <br>
+    <div>
+        <label for="wallet">Ethereum Wallet Address:</label>
+    </div>
+    <div>
+        <input type="text" id="wallet" size="50">
+        <button onclick="clearAll()">Clear all</button>
+    </div>
+    <br>
+    <div>
+        <button onclick="getETHBalance()">Get ETH Balance</button>
+        <div id="eth_output"></div>
+    </div>
+    <br>
+    <div>
+        <button onclick="getUSDTBalance()">Get USDT Balance</button>
+        <div id="usdt_output"></div>
+    </div>
+    <div id="error_output"></div>
+</body>
+</html>
